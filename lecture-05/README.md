@@ -22,10 +22,24 @@ board 12
 - Використовуйте цикл для кожного рядка з файлу.
 - В кожній ітерації циклу використовуйте умову if, щоб перевірити, чи присутній рядок у поточному рядку, і, якщо присутній, виведіть поточний рядок разом із номером рядка.
 
-2. У вас є файл із такими реченнями: Peter Piper picked a peck of pickled peppers. A peck of pickled peppers Peter Piper picked. Where's the peck of pickled peppers Peter Piper picked.
+2. У вас є файл із такими реченнями: 
+
+```
+Peter Piper picked a peck of pickled peppers. 
+A peck of pickled peppers Peter Piper picked. 
+Where's the peck of pickled peppers Peter Piper picked.
+```
+
 Потрібно вставити нове речення (If Peter Piper picked a peck of pickled peppers) після другого речення в той самий рядок. 
 
-Бажаний результат: Peter Piper picked a peck of pickled peppers. A peck of pickled peppers Peter Piper picked. If Peter Piper picked a peck of pickled peppers. Where's the peck of pickled peppers Peter Piper picked.
+Бажаний результат: 
+
+```
+Peter Piper picked a peck of pickled peppers. 
+A peck of pickled peppers Peter Piper picked. 
+If Peter Piper picked a peck of pickled peppers.
+Where's the peck of pickled peppers Peter Piper picked.
+```
 
 Підказка:
 - Прочитати речення з файлу,
@@ -33,26 +47,25 @@ board 12
 - Записати його в новий файл. 
 - Використовуйте метод splitlines(), який повертає список рядків, розбитих на межі рядків.
 
+
 3. Модуль pathlib має функції: 
 - read_text(), що читає текстовий файл 
 - path.read_text().count("\n") читає текстовий файл і обчислює кількість рядків шляхом підрахунку рядків.
 - len(path.read_text().split()) читає текстовий файл і обчислює кількість слів
 - len(path.read_text()) читає текстовий файл і обчислює кількість символів, знаходячи довжину рядка.
 
-Написати скрипт, що може читати один або декілька текстових файлів і повідомляти, скільки рядків, слів і символів містить кожен із файлів. 
-
+Написати скрипт, що читає текстовий файл і повідомляє, скільки рядків, слів і символів містить цей файл. 
 4. Написати скрипт виводу квадрата заданого числа
-Використовуючи модуль argparse, додати до скрипта підказку при виклику програми: python prog.py --help
+Використовуючи модуль sys, додати до скрипта підказку при виклику програми: python square.py --help
 
 потрібно отримати такий результат:
 ```
-usage: square.py [-h] [-v] square
+  usage: square.py number [-h]
 
-positional arguments:
-  square         display a square of a given number
+  positional arguments:
+    number         display a square of a given number
 
-options:
-  -h, --help     show this help message and exit
-  -v, --verbose  increase output verbosity
+  options:
+    -h | --help  show this help message and exit
 
 ```
